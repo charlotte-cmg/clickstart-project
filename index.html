@@ -11,28 +11,81 @@
 		}
 		
 		li{font-family: "Courier New", "Lucida Console", monospace;
-			color:#46494c;
+			color:#00080d;
 		}
 		
+		body {background: #F0ECC9;
+		}
+		
+/* broken for experimentation
+		body {
+			background-image: url("star-bg.png");
+			background-repeat: repeat;
+		}
+		
+		navbar color background: #01928B;
+*/
+
+/*Navbar*/
 		.navbar {
-			background-color:blue;
-		}
-
-		.btn {
-			background-color: yellow;
-			color: purple;
-			border: 2px solid purple;
-			padding: 20px;
+			width: 100%;
+			padding: 10px;
+			border: 1px solid black;
 			text-align: center;
+			background-image: url("blue-star-bg.png");
+			background-repeat: repeat;
+			position: fixed;
+			z-index:50;
+		}
+		
+		.btn {
+			display: inline;
+			padding: 5px;
+			border: 1px solid black;
+			border-radius: 3px;
+			background: azure;
+			text-align: center;
+			font-size: 20px;
+			margin: 5px 10px;
+			cursor: pointer;	
+		}
+		
+		.linknoul {
 			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
-			margin: 4px 2px;
-			cursor: pointer;
-			border-radius: 10px
 		}
 
 
+/*Main*/
+main {
+	position:relative;
+	top:100px;
+}
+		
+/*Header*/
+		
+		.header {
+			width: 100%;
+			padding: 5px;
+			text-align: center;
+			top: 100px;
+		}
+		
+/*Pictures*/
+
+		.pics {
+			width: 33%;
+			display: block;
+			margin: auto;
+		}
+
+/*Footer*/
+
+		.footer {
+			width: 100%;
+			padding: 10px;
+			text-align: center;
+			background-color:rgba(255, 255, 255, 0.5);
+		}
 		
 	</style>
 	
@@ -40,37 +93,67 @@
 
 <body>
 	
+<!--Navigation Bar-->
+
 	<div class="navbar">
-		<a href="portfolio.html" target="_blank">
-			<button class="btn">Portfolio</button>
-		</a>
+		<a href="index.html" class="linknoul"><button class="btn">Home</button></a>
+		<a href="portfolio.html"  class="linknoul" target="blank"><button class="btn">Portfolio</button></a>
+		<a href="www.linkedin.com/in/charlotte-m-goose"  class="linknoul" target="blank"><button class="btn">LinkedIn</button></a>
 	</div>
 	
-	<h1> C. M. Goose's Personal Page</h1>
-	<h2> Index Page</h2>
-	
-	<p> Film Studies and English Literature graduate of University of Manchester, 2024.  Arts enthusiast diving into web development and UX/UI.</p>
-	
-	<h3>Website currently exists in 1997.</h3>
-	<i><b>Please stand by.</b></i><br>
-	
-	<h3><u>Experience</u></h3>
-	<ol type="i">
-		<li>Bartender and waitstaff in <b>UoM Student's Union Bar and Kitchen</b> and <b>Manchester Academy venues</b>.</li>
-		<li>Bartender in <b>Turtle Bay Broad Quay</b>.</li>
-		<li>Volunteer Social Media Campaign Manager with <b>Volunteering Matters</b>.</li>
-		<li>Volunteer Personal Assistant with <b>Volunteering Matters</b>.</li>
-		<li>Sales Assistant with <b>WHSmith Cribbs Causeway</b>.</li>
-		<li>Retail Assistant with <b>Primark Bristol</b>.</li>
-	</ol>
-	
-	<br>
-	
-	<h3>Projects</h3>
-	<ul>
-		<li><a href="portfolio.html" target="_blank">View my portfolio page here.</a></li>
-	</ul>
-	
+<main>
 
+<!--Header-->
+
+	<div class="header">
+		<h1> C. M. Goose</h1>
+		<h2> Personal Website</h2>
+	</div>
+	
+	<div style="width: 100%;">
+		<p> Film Studies and English Literature graduate of University of Manchester, 2024.  Arts and media enthusiast diving into digital marketing, web development and UX/UI.</p>
+	</div>
+
+<!--Pictures-->
+
+	<div style="display:flex; flex-direction:row; margin:auto;">
+		<img class="pics" src="book-stack-square.png">
+		<img class="pics" src="coffee-book-square.png">
+		<img class="pics" src="warm-desk-square.png">
+	</div>
+
+<!--Main Text-->
+
+<div style="margin:10px; bottom:100px; width: 100%;">
+	<div style="background-color:rgba(255, 255, 255, 0.5);">
+		<h3><u>Work Experience</u></h3>
+		<ol type="i">
+			<li>Bartender and waitstaff in <b>UoM Student's Union Bar and Kitchen</b> and <b>Manchester Academy venues</b>.</li>
+			<li>Bartender in <b>Turtle Bay Broad Quay</b>.</li>
+			<li>Volunteer Social Media Campaign Manager with <b>Volunteering Matters</b>.</li>
+			<li>Volunteer Personal Assistant with <b>Volunteering Matters</b>.</li>
+			<li>Sales Assistant with <b>WHSmith Cribbs Causeway</b>.</li>
+			<li>Retail Assistant with <b>Primark Bristol</b>.</li>
+		</ol>
+	</div>
+	
+	<div style="background-color:rgba(255, 255, 255, 0.5);">
+		<h3>Interests</h3>
+		<ul>
+			<li>Literature, film and theatre, particularly feminist speculative and horror fictions</li>
+			<li>Research, education and pursuing knowledge in its many forms</li>
+			<li>Local activism, ecological awareness and building meaningful support networks for vulnerable people</li>
+			<li>Fibre crafts and sewing, custom clothes repair and upcycling</li>
+		</ul>
+	</div>
+</div>
+
+<!--footer-->
+	
+	<div class="footer">
+		<p>Created through the Bath Spa Click Start 2024-25 programme. Site built with custom CSS and Bootstrap 5.</p>
+		<p><em>Contact me for professional enquiries on <a href="https://www.linkedin.com/in/charlotte-m-goose/">my LinkedIn page</a>!</em></p>
+	</div>
+</main>
 </body>
 </html>
